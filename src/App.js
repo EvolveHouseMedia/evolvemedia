@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css"
+import MainComponent from "./Components/MainComponent"
+import useOnlineStatus from "./Constants/useOnlineStatus"
+import Splash from "./Components/Splash"
+import { MdSignalWifiStatusbarConnectedNoInternet } from "react-icons/md"
+import { useEffect, useState } from "react"
 function App() {
+  const [isLoading, setIsLoading] = useState(false)
+  const onlineStatus = useOnlineStatus()
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 4000)
+
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [])
+
+  if (onlineStatus === false) {
+    return (
+      <div className="nointernet container">
+        <MdSignalWifiStatusbarConnectedNoInternet size={45} />
+        <h3>Your are Offline please Check your internet connection</h3>
+        <span>- Team Evolve House Media</span>
+      </div>
+    )
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className="App ">{isLoading ? <Splash /> : <MainComponent />}</div>
+  )
 }
 
-export default App;
+export default App
