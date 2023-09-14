@@ -203,8 +203,7 @@
 }
 
 .feedbacker:hover {
-  outline: 1px solid black;
-  transform: translateY(-10px);
+  transform: translateY(-15px);
 }
 
 .newsletter {
@@ -317,13 +316,15 @@
   color: white;
 }
 .anim:hover {
-  background-color: #00a3ff;
+  background-color: #FFA70C;
+  color: white;
 }
 .anim {
-  border: 1px solid #263238;
   color: #263238;
 }
 .comm:hover {
   background-color: #263238;
   color: white;
 }
+
+

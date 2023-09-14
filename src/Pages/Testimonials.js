@@ -4,19 +4,19 @@ const Testimonials = () => {
   const List = [
     {
       id: 1,
-      name: "Shekar",
+      name: "Ajith",
       content:
         "Evolve House Media did an amazing job capturing the essence of our event through their photography. The moments they captured were simply breathtaking and truly brought our event to life.",
     },
     {
       id: 2,
-      name: "Ravi",
+      name: "Darshan",
       content:
         "We were blown away by the video production services provided by Evolve House Media. They delivered a high-quality video that perfectly showcased our products and services. The attention to detail and creativity in their work is truly commendable.",
     },
     {
       id: 3,
-      name: "Vinay",
+      name: "Dushyanth",
       content:
         "Evolve House Media's animation services took our storytelling to the next level. They created captivating animations that perfectly conveyed our brand's message. The animations helped us engage with our audience in a unique and impactful way.",
     },
@@ -28,7 +28,7 @@ const Testimonials = () => {
       {List.map(({ id, name, content }) => (
         <div className="divver col-sm-12 col-md-4 col-lg-4">
           <div className=" feedbacker " key={id}>
-                  <h3 className="headd">{name}</h3>
+            <h3 className="headd">{name}</h3>
             <p>"{content}"</p>
           </div>
         </div>

@@ -8,6 +8,13 @@
   animation: fadeinout 4s linear forwards;
 }
 
+.errorTxt {
+  display: block;
+  color: red;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
 @-webkit-keyframes fadeinout {
   0%,
   100% {
@@ -83,7 +90,7 @@
 }
 
 .walink {
-  background-color: #00a3ff;
+  background-color: #44c654;
   color: white;
   padding: 0.7rem 1rem;
   border-radius: 0.3rem;
@@ -129,9 +136,6 @@
   height: 100%;
   object-fit: contain;
 }
-/* .modalBgImg {
-  width: 100%;
-} */
 .modalForm {
   width: 100%;
 }
@@ -229,7 +233,19 @@
 .sendbtn {
   width: 150px;
   font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #0092e7;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.3rem;
 }
+
+.sendbtn:hover{
+  background-color: #7CC97D;
+}
+
 .modall {
   z-index: 9;
 }
@@ -271,11 +287,26 @@
 .inputer {
   width: 100%;
   padding: 0.6rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
   border-radius: 0.3rem;
   font-size: 0.9rem;
   outline: none;
   border: 0.1rem solid rgb(184, 184, 184);
+}
+
+.formErrorIndicator {
+  color: red;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.replyMessageHeading {
+  font-family: "Cormorant Garamond";
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.replymessage {
+  font-size: 1.2rem;
 }
 
 .iconer {
@@ -527,20 +558,33 @@ iframe {
     bottom: 0;
   }
   .formparaa {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .modal-title {
     font-size: 20px;
-    font-weight: ;
     margin-bottom: 10px;
   }
   .inputer {
-    padding: 0.4rem;
-    font-size: 1.1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
   }
   .iconerrr {
     display: inline-flex;
     margin-right: 1.2rem;
+  }
+  .replyMessageHeading {
+    font-family: "Cormorant Garamond";
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .replytxt {
+    text-align: center;
+  }
+  .sendbtn {
+    width: 100%;
+  }
+  .replymessage {
+    font-size: 0.9rem;
   }
   .displayer {
     display: flex;
@@ -550,7 +594,7 @@ iframe {
     margin-top: 5vh;
     width: 100%;
     height: 90vh;
-    background-color: #00a3ff;
+    background-color: #fcfcfc;
     color: #263238;
     font-size: 1.5rem;
     position: absolute;
@@ -567,14 +611,16 @@ iframe {
   .iconee {
     display: fixed;
   }
-  .sendbtn {
-    width: 100%;
-    font-size: 1rem;
-  }
   .walink {
-    padding: 0;
+    padding: 0.5rem;
     font-size: 1rem;
     font-weight: 700;
+    width: 250px;
+  }
+  .gitbtn {
+    width: 250px;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
   }
   /* Shimmer  */
   .navbarShimmer {

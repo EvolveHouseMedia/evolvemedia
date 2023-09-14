@@ -6,6 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css"
 const Work = () => {
   const [btnname, setBtnname] = useState("")
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     if (isModalOpen) {
@@ -27,10 +28,20 @@ const Work = () => {
   const closeModal = () => {
     setIsModalOpen(false)
   }
+  const workImageLoader = () => {
+    setIsLoading(false)
+  }
   return (
     <div className="workLayout container" id="work">
       <div className="wimager">
-        <LazyLoadImage effect="blur" src={WorkImg} alt="" className="hImg" />
+        {isLoading && <p>Image Loading....</p>}
+        <LazyLoadImage
+          effect="blur"
+          src={WorkImg}
+          alt="WorkImage"
+          className="hImg"
+          onLoad={workImageLoader}
+        />
       </div>
       <div className="wTxter ">
         <h2 className="commonheading"> latest Work </h2>

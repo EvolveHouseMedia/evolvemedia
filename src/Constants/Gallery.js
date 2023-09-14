@@ -10,8 +10,9 @@ import AnimationData from "../contents/Animations"
 const Gallery = ({ name, closebtn }) => {
   const [page, setPage] = useState(1)
   const [comImg] = useState(Commercial)
+  const [isLoading, setIsLoading] = useState(true)
 
-  const totalPages = comImg.length / 10
+  const totalPages = Math.ceil(comImg.length / 10)
   const userSelectedPage = (selectedPage) => {
     if (
       selectedPage >= 1 &&
@@ -20,6 +21,10 @@ const Gallery = ({ name, closebtn }) => {
     ) {
       setPage(selectedPage)
     }
+  }
+
+  const handleImageLoad = () => {
+    setIsLoading(false)
   }
   return (
     <div className=" commerrr">
@@ -42,11 +47,13 @@ const Gallery = ({ name, closebtn }) => {
                 return (
                   <>
                     <div key={index} className="comimager">
+                      {isLoading && <p>Loading...</p>}
                       <LazyLoadImage
                         effect="blur"
                         src={c}
                         alt="Commercial pics"
                         className="comImg"
+                        onLoad={handleImageLoad}
                       />
                     </div>
                   </>

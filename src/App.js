@@ -5,13 +5,13 @@ import Splash from "./Components/Splash"
 import { MdSignalWifiStatusbarConnectedNoInternet } from "react-icons/md"
 import { useEffect, useState } from "react"
 function App() {
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const onlineStatus = useOnlineStatus()
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 4000)
+    }, 3000)
 
     return () => {
       clearTimeout(timer)
