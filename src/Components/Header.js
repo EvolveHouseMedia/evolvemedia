@@ -108,7 +108,7 @@ const Header = () => {
               title="Chat Now"
               className="walink"
               number="+91 8884266808"
-              message="Hello "
+              message=" "
               onClick={handleClick}
             >
               <IoLogoWhatsapp className="iconerrr" size={35} />

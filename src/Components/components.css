@@ -242,8 +242,8 @@
   border-radius: 0.3rem;
 }
 
-.sendbtn:hover{
-  background-color: #7CC97D;
+.sendbtn:hover {
+  background-color: #7cc97d;
 }
 
 .modall {
@@ -339,14 +339,24 @@
 
 .footerLayoutt {
   color: rgb(14, 14, 14);
-  padding-top: 1.5rem;
-  padding-bottom: 0.7rem;
   margin: auto;
   display: flex;
   gap: 2rem;
   justify-content: space-evenly;
   align-items: baseline;
   text-align: left;
+  padding: 3rem 4rem;
+}
+
+.footerwaLink {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.ftriconerrr {
+  color: #44c654;
 }
 
 .fcon {
@@ -363,9 +373,16 @@
 }
 
 .fparaa {
-  margin-top: 1rem;
   font-weight: 500;
   font-size: 1rem;
+}
+
+.flexerrr {
+  text-align: center;
+}
+.flexerTxt {
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .iconfler {
@@ -374,7 +391,7 @@
 }
 
 .hre {
-  margin: 2rem 0;
+  margin: 0.7rem 0;
 }
 .hree {
   text-decoration: none;
@@ -444,42 +461,25 @@ iframe {
   animation: skeleton-loading 1s linear infinite alternate;
 }
 
-.homeShimmer {
-  height: 90vh;
+.shimmerTexter {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-}
-
-.shimmerImager {
-  width: 100%;
-  height: 100%;
-  background-color: #e7e7e7;
-  animation: skeleton-loading 1s linear infinite alternate;
-}
-
-.hShimmerImage {
-  width: 100%;
-  height: 100%;
-}
-.shimmerTexter {
-  width: 100%;
+  flex-direction: column;
 }
 .shimmertitler {
-  width: 85%;
+  width: 90%;
   height: 50px;
-  background-color: #e7e7e7;
   border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #e7e7e7;
   animation: skeleton-loading 1s linear infinite alternate;
-}
-.shimmerHeading {
-  margin-bottom: 1.2rem;
 }
 .shimmerpara {
   width: 90%;
-  height: 15px;
+  height: 25px;
   border-radius: 1.5rem;
   background-color: #e7e7e7;
   animation: skeleton-loading 1s linear infinite alternate;
@@ -649,40 +649,18 @@ iframe {
     border-radius: 5px;
   }
 
-  .homeShimmer {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-  }
-
-  .shimmerImager {
-    width: 100%;
-    height: 100%;
-    background-color: #e7e7e7;
-  }
-
-  .hShimmerImage {
-    width: 100%;
-    height: 100%;
-  }
   .shimmerTexter {
     width: 100%;
   }
   .shimmertitler {
-    width: 90%;
-    height: 20px;
+    width: 80%;
+    height: 24px;
     background-color: #e7e7e7;
     border-radius: 0.5rem;
   }
-  .shimmerHeading {
-    margin-bottom: 0.5rem;
-  }
+
   .shimmerpara {
-    width: 90%;
+    width: 80%;
     height: 12px;
     border-radius: 1.5rem;
     background-color: #e7e7e7;
@@ -715,6 +693,12 @@ iframe {
   .ficons {
     width: 100%;
     /* background-color: rgb(255, 177, 103); */
+  }
+  .fcommonh {
+    font-weight: 700;
+    padding-top: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 0.7rem;
   }
   .img-modal {
     margin-top: 2vh;

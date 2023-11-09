@@ -36,7 +36,7 @@ function Modal({ onClose }) {
             </div>
             <div className="modalForm replytxt">
               <h1 className="replyMessageHeading">
-                Thank you for getting in touch with us. Our team will be in
+                Thank you for your response. Our team will get in
                 touch with you shortly
               </h1>
 

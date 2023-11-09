@@ -235,6 +235,20 @@
   color: white;
   font-weight: 600;
 }
+a {
+  color: rgb(43, 43, 43);
+}
+
+.footerwaLink {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.ftriconerrr {
+  color: #44c654;
+}
 
 @media screen and (max-width: 1020px) {
   .homeLayout {
@@ -316,7 +330,7 @@
   color: white;
 }
 .anim:hover {
-  background-color: #FFA70C;
+  background-color: #202020;
   color: white;
 }
 .anim {
@@ -326,5 +340,3 @@
   background-color: #263238;
   color: white;
 }
-
-

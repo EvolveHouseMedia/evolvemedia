@@ -3,45 +3,93 @@ import Logo from "../Images/logo.png"
 import { FaYoutube } from "react-icons/fa6"
 import { BiLogoFacebookCircle, BiSolidPhoneCall } from "react-icons/bi"
 import { AiFillInstagram } from "react-icons/ai"
-import { HiMail } from "react-icons/hi"
+import { HiMail, HiLocationMarker } from "react-icons/hi"
+import ReactWhatsapp from "react-whatsapp"
+import { Link } from "react-router-dom"
+import { IoLogoWhatsapp } from "react-icons/io"
+
 const Footer = () => {
   return (
     <div className="footerLayout">
-      <div className="footerLayoutt container-lg">
+      <div className="footerLayoutt">
         <div className="flogo">
-          <img
+          {/* <img
             src={Logo}
             alt="Footer Icon"
             className="fimg"
             width={70}
             height={70}
-          />
+          /> */}
+          <h4 className="fcommonh">Evolve House Media </h4>
           <p className="fparaa">
             Unlock your brand's potential with Evolve House Media – where
             creativity and digital excellence meet!
           </p>
+          <div>
+            <span>With just one click chat with us</span>
+            <ReactWhatsapp
+              title="Chat Now"
+              className="footerwaLink"
+              number="+91 8884266808"
+              message=" "
+              // onClick={handleClick}
+            >
+              <IoLogoWhatsapp className="ftriconerrr " size={30} />
+            </ReactWhatsapp>
+          </div>
         </div>
         <div className="fcontact">
           <h4 className="fcommonh">Contact us </h4>
 
-          <span className="hre">
-            <a className="hree" href="tel:+91 8884268808">
-              <BiSolidPhoneCall size={25} /> 8884268808
-            </a>
-          </span>
-          <br />
-          <span className="hre">
-            <a className="hree" href="mailto:evolvehousemedia@gmail.com">
+          <p className="hre">
+            <Link className="hree" to="">
+              <BiSolidPhoneCall size={25} /> 8884268808 / 9886410274 /
+              9206778731
+            </Link>
+          </p>
+          <p className="hre">
+            <Link className="hree" to="mailto:evolvehousemedia@gmail.com">
               <HiMail size={25} /> evolvehousemedia@gmail.com
-            </a>
-          </span>
+            </Link>
+          </p>
+          <p className="hre">
+            <Link className="hree" to="mailto:evolvehousemedia@gmail.com">
+              <HiLocationMarker size={25} />
+              Bangalore, Karnataka
+            </Link>
+          </p>
         </div>
         <div className="ficons">
           <h4 className="fcommonh">Follow us </h4>
           <div className="iconfler">
-            <BiLogoFacebookCircle size={30} />
-            <AiFillInstagram size={30} />
-            <FaYoutube size={30} />
+            <Link
+              to="https://www.instagram.com/evolvehousemedia/"
+              target="_blank"
+            >
+              <div className="flexerrr">
+                <BiLogoFacebookCircle size={30} /> <br />
+                <span className="flexerTxt">Facebook</span>
+              </div>
+            </Link>
+            <Link
+              to="https://www.instagram.com/evolvehousemedia/"
+              target="_blank"
+            >
+              <div className="flexerrr">
+                <AiFillInstagram size={30} /> <br />
+                <span className="flexerTxt">Instagram</span>
+              </div>
+            </Link>
+            <Link
+              to="https://www.youtube.com/@EvolveHouseMedia/"
+              target="_blank"
+            >
+              <div className="flexerrr">
+                <FaYoutube size={30} />
+                <br />
+                <span className="flexerTxt">Youtube</span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

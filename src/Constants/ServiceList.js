@@ -19,7 +19,7 @@ const ServiceList = [
     id: 3,
     title: "Animation",
     img: Img123,
-    content: `Transform your ideas into visually captivating animations. Whether you need explainer videos or animated logos, our team crafts creative and unique animations that grab attention.`,
+    content: `Transform your ideas into visually captivating animations, product animations, and stroy-telling videos with high and low poly model realis renders. Whether you need explainer videos or animated logos, our team crafts creative and unique animations that grab attention.`,
   },
 ]
 

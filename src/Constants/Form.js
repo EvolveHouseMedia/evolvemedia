@@ -12,7 +12,7 @@ const Form = ({ isSubmitted, setIsSubmitted }) => {
 
   // Validating User Inputs
   const nameRegex = /^[A-Za-z\s'-]+$/
-  const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
+  const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{3})+$/
   const phoneRegex = /^(\+?91|0)?[6789]\d{9}$/
 
   const validateName = nameRegex.test(name)
@@ -129,7 +129,7 @@ const Form = ({ isSubmitted, setIsSubmitted }) => {
             id="mess"
             cols="30"
             rows="5"
-            placeholder="Leave us a message"
+            placeholder="Reason of contact: Eg - I need to enquire about Animation"
           ></textarea>
           <br />
           <div className="getInTouch">

@@ -26,7 +26,7 @@ const Testimonials = () => {
     <div className="testimonials container row mx-auto">
       <h2 className="commonheading  ">What People are saying...</h2>
       {List.map(({ id, name, content }) => (
-        <div className="divver col-sm-12 col-md-4 col-lg-4">
+        <div className="divver col-sm-12 col-md-6 col-lg-4 mx-auto">
           <div className=" feedbacker " key={id}>
             <h3 className="headd">{name}</h3>
             <p>"{content}"</p>
