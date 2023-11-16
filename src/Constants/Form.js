@@ -129,7 +129,7 @@ const Form = ({ isSubmitted, setIsSubmitted }) => {
             id="mess"
             cols="30"
             rows="5"
-            placeholder="Reason of contact: Eg - I need to enquire about Animation"
+            placeholder="Message - ex: I need to enquire about Animation"
           ></textarea>
           <br />
           <div className="getInTouch">

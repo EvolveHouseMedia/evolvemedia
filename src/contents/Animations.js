@@ -1,7 +1,7 @@
 const AnimationData = [
   {
     id: 1,
-    srcs: "https://www.youtube.com/embed/Ykktk18mESA?si=pf5dgtrXV2QEyEk3",
+    srcs: "https://www.youtube.com/embed/akrgkihn7dE?si=DukuAOvdaSfJzU5w",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const AnimationData = [
   },
   {
     id: 5,
-    srcs: "https://www.youtube.com/embed/akrgkihn7dE?si=DukuAOvdaSfJzU5w",
+    srcs: "https://www.youtube.com/embed/Ykktk18mESA?si=pf5dgtrXV2QEyEk3",
   },
 ]
 export default AnimationData

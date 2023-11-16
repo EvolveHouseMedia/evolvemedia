@@ -26,7 +26,7 @@ const Footer = () => {
             creativity and digital excellence meet!
           </p>
           <div>
-            <span>With just one click chat with us</span>
+            <span>Chat with us, with just one click</span>
             <ReactWhatsapp
               title="Chat Now"
               className="footerwaLink"
