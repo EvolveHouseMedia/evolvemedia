@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import WorkImg from "../Images/collag.jpg"
 import Gallery from "../Constants/Gallery"
+import { FaAngleDown } from "react-icons/fa6";
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
 const Work = () => {
@@ -52,6 +53,8 @@ const Work = () => {
           attention to detail, creativity, and commitment to delivering
           impactful results. We take pride in collaborating with businesses
           across various industries to help them achieve their digital goals.
+            <br />
+            Explore further by clicking below <FaAngleDown size={25} />
         </p>
         <div className="btns">
           <button id="commercials" className="btnn comm" onClick={triggerClick}>
