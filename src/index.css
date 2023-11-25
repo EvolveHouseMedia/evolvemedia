@@ -300,10 +300,15 @@ font-weight: 600;
   .inputere {
     width: 100%;
   }
-/*   .wimager, */
+/*   .wimager,
   .hImg {
-    display: none;
+    flex-direction: row-reverse;
+  } */
+
+  .workLayout{
+    flex-direction: row-reverse;
   }
+  
   .wTxter {
     width: 100%;
   }
