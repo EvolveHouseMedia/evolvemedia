@@ -53,9 +53,11 @@ const Work = () => {
           attention to detail, creativity, and commitment to delivering
           impactful results. We take pride in collaborating with businesses
           across various industries to help them achieve their digital goals.
-            <br />
-            Explore further by clicking below <FaAngleDown size={25} />
+            
         </p>
+            <br />
+            <p className="explore">
+             Click below to view more <br /> <FaAngleDown size={25} /></p>
         <div className="btns">
           <button id="commercials" className="btnn comm" onClick={triggerClick}>
             Commercials
