@@ -6,9 +6,9 @@ const Form = ({ isSubmitted, setIsSubmitted }) => {
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
   const [message, setMessage] = useState("")
-  
+
   const UserEnquiryAPI =
-    "https://getform.io/f/78b52496-29bc-494c-9f23-40e39220b968"
+    "https://getform.io/f/41beb954-c7dc-49c6-97e2-51d6345bf4db"
 
   // Validating User Inputs
   const nameRegex = /^[A-Za-z\s'-]+$/

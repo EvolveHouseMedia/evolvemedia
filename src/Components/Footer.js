@@ -1,5 +1,4 @@
 import React from "react"
-import Logo from "../Images/logo.png"
 import { FaYoutube } from "react-icons/fa6"
 import { BiLogoFacebookCircle, BiSolidPhoneCall } from "react-icons/bi"
 import { AiFillInstagram } from "react-icons/ai"
@@ -13,13 +12,6 @@ const Footer = () => {
     <div className="footerLayout">
       <div className="footerLayoutt">
         <div className="flogo">
-          {/* <img
-            src={Logo}
-            alt="Footer Icon"
-            className="fimg"
-            width={70}
-            height={70}
-          /> */}
           <h4 className="fcommonh">Evolve House Media </h4>
           <p className="fparaa">
             Unlock your brand's potential with Evolve House Media – where
