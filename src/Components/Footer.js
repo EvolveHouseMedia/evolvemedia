@@ -35,8 +35,8 @@ const Footer = () => {
 
           <p className="hre">
             <Link className="hree" to="">
-              <BiSolidPhoneCall size={25} /> 8884268808 / 9886410274 /
-              9206778731
+              <BiSolidPhoneCall size={25} /> 8884266808 / 9886410274 /
+              9113078119
             </Link>
           </p>
           <p className="hre">
