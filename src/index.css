@@ -250,6 +250,10 @@ a {
   color: #44c654;
 }
 
+.explore{
+font-weight: 600;
+}
+
 @media screen and (max-width: 1020px) {
   .homeLayout {
     display: flex;
