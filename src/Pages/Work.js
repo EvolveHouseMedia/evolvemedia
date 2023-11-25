@@ -55,7 +55,6 @@ const Work = () => {
           across various industries to help them achieve their digital goals.
             
         </p>
-            <br />
             <p className="explore">
              Click below to view more <br /> <FaAngleDown size={25} /></p>
         <div className="btns">
