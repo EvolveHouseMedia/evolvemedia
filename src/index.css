@@ -315,7 +315,8 @@ font-weight: 600;
     font-weight: 800;
   }
   .explore{
-    text-align:"center";
+    width:"100%";
+    text-align: center;
   }
 }
 
