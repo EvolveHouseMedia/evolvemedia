@@ -253,7 +253,9 @@ a {
 .explore{
 font-weight: 600;
 }
-
+.mobilescreen {
+  display: none;
+}
 @media screen and (max-width: 1020px) {
   .homeLayout {
     display: flex;
