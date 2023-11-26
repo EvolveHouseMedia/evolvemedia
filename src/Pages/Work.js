@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import WorkImg from "../Images/collag.jpg"
+import MobileImg from "../Images/mobileScreen.JPG"
 import Gallery from "../Constants/Gallery"
 import { FaAngleDown } from "react-icons/fa6";
 import { LazyLoadImage } from "react-lazy-load-image-component"
@@ -55,6 +56,7 @@ const Work = () => {
           across various industries to help them achieve their digital goals.
             
         </p>
+            <img className="mobilescreen" src={MobileImg} alt="mobileBanner" />
             <p className="explore">
              Click below to view more <br /> <FaAngleDown size={25} /></p>
         <div className="btns">
