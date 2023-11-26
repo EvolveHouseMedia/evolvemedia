@@ -279,9 +279,11 @@ font-weight: 600;
     font-size: 1rem;
   }
   .aboutLayout {
+    padding-top:5rem;
     margin: 4rem 0;
   }
   .serviceLayout {
+    padding-top:2rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -307,6 +309,7 @@ font-weight: 600;
 
   .workLayout{
     flex-direction: column;
+    padding-top:5rem;
   }
   
   .wTxter {
@@ -326,6 +329,12 @@ font-weight: 600;
   .btns {
     justify-content: center;
     align-items: center;
+  }
+  .mobilescreen {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
   }
 }
 
